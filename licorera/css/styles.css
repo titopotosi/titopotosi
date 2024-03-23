@@ -1,0 +1,289 @@
+/* Estilos base: móviles y dispositivos pequeños */
+body {
+  color: #fff;
+
+}
+
+/* Tabletas en posición vertical u horizontal */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  p,
+  h2,
+  h4 {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-col {
+    flex-direction: column;
+  }
+
+  .contenedor-flex {
+    flex-direction: column;
+  }
+
+  p,
+  h4 {
+    text-align: center;
+  }
+
+  .columna-flex {
+    text-align: center;
+
+  }
+}
+
+
+
+/* Pantallas grandes: desktops */
+@media (max-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+/* Pantallas muy grandes: monitores de alta resolución */
+@media (max-width: 1600px) {
+  body {
+    font-size: 30px;
+    /* Ajustes para monitores de alta resolución */
+  }
+}
+
+@media (min-width: 1601px) {
+  body {
+    font-size: 40px;
+  }
+}
+
+/* ----------------- 1. SLIDERS  -------------------------- */
+
+
+.section-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: rgba(16, 15, 15, 0.965);
+
+
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  /* Color de fondo temporal */
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.849);
+}
+
+
+/* ------------------- 2.  INFORMACION ------------------------ */
+.section-info {
+
+  height: auto;
+  background-color: rgba(46, 45, 45, 0.965);
+  display: flex;
+  justify-content: center;
+  /* Centrado horizontal */
+  align-items: center;
+  /* Centrado vertical */
+}
+
+.contenedor-flex {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+
+.columna-flex {
+  flex: 1;
+
+
+
+  /*Distribuye el espacio disponible por igual */
+}
+
+.columna-flex figure img {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------3. COLUMNAS ------------------------ */
+
+
+.section-columnas {
+  overflow: hidden;
+  /* Para que la imagen no se desborde */
+  height: auto;
+  background-color: rgba(16, 15, 15, 0.965);
+
+
+  /* Asegura que las columnas se ajusten en pantallas pequeñas */
+}
+
+
+.contenedor-col {
+
+  overflow: hidden;
+  /* Para que la imagen no se desborde */
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  /* Las columnas crecen igualmente para llenar el espacio */
+  max-width: 100%;
+  /* Máximo ancho de cada columna */
+  margin: 15px;
+  /* Espacio alrededor de las columnas */
+}
+
+.columna img {
+  width: 100%;
+  /* Hace que las imágenes sean responsivas */
+  height: 400px;
+  /* Mantiene la proporción de las imágenes */
+}
+
+.columna p {
+  text-align: justify;
+}
+
+
+
+/* ------------------ 4. REGISTRO ------------------------- */
+
+.section-registro {
+  overflow: hidden;
+  /* Para que la imagen no se desborde */
+
+  height: auto;
+  background-color: rgba(46, 45, 45, 0.965);
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #39c;
+  margin: 3%;
+
+}
+
+
+.button {
+  color: #318aac !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: initial;
+  margin: 3%;
+
+}
+
+.button:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+
+/* -------------------5. SOCIAL ----------------------- */
+.section-social {
+  overflow: hidden;
+  /* Para que la imagen no se desborde */
+
+  height: auto;
+  background-color: rgba(16, 15, 15, 0.965);
+
+}
+
+.icono img {
+  width: 8%;
+  height: 10%;
+}
+
+.txt-social {
+  text-align: center;
+}
+
+
+
+/* ------------------6. MAPS ------------------------- */
+.section-mapa {
+  overflow: hidden;
+  /* Para que la imagen no se desborde */
+}
+
+.map {
+  width: 100%;
+  height: 500;
+  border: 4;
+}
+
+
+/* --------------------------------------------------- */
+
+.logo  {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  width: 15%;
+  height: 35%;
+  transform: translate(-50%, -50%);
+}

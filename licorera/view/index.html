@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Licorera</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+
+  <!-- ----------------- 1. SLIDERS  -------------------------- -->
+  <section class="section-slider">
+    <div >
+      <img class="logo" src="../img/logo.jpeg" alt="Icono">
+    </div>
+    <div class="slides">
+      <figure class="slide" id="slide-1">
+        <img src="../img/slider1.jpg">
+      </figure>
+      <figure class="slide" id="slide-2">
+        <img src="../img/slider2.jpg">
+      </figure>
+      <figure class="slide" id="slide-3">
+        <img src="../img/slider3.jpg">
+      </figure>
+    </div>
+
+    <button class="prev" onclick="cambiarSlide(-1)" aria-label="Anterior">&#10094;</button>
+    <button class="next" onclick="cambiarSlide(1)" aria-label="Siguiente">&#10095;</button>
+  </section>
+
+
+  <!-- ------------------- 2.  INFORMACION ------------------------ -->
+
+  <section class="section-info">
+    <div class="contenedor-flex">
+
+      <div class="columna-flex">
+        <h4>Encuentra tus marcas favoritas DE LICORES</h4>
+        <p>La licorería “el rincón de los amigos” les ofrece variedad de licores.
+          Para que celebren fechas especiales con sus amigos, familiares etc.</p>
+      </div>
+
+      <div class="columna-flex">
+        <figure class="imgdiv" id="">
+          <img src="../img/img-div1.jpg">
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- -------------------3. COLUMNAS ------------------------ -->
+
+
+  <section class="section-columnas">
+    <div class="contenedor-col">
+      <article class="columna">
+        <img src="../img/img-div2A.jpg" alt="Descripción de la imagen 1">
+        <p>En nuestra tienda online encontrarás la mejor selección de licores</p>
+      </article>
+
+      <article class="columna">
+        <img src="../img/img-div2B.jpg" alt="Descripción de la imagen 2">
+        <p>También puedes encontrar los mejores precios en nuestra tienda física</p>
+      </article>
+
+      <article class="columna">
+        <img src="../img/img-div2C.jpg" alt="Descripción de la imagen 3">
+        <p>Distribuidor de Generosos para el sector de hostelería y para particulares</p>
+      </article>
+    </div>
+
+  </section>
+
+
+
+  <!-- ------------------ 4. REGISTRO ------------------------- -->
+
+
+  <section class="section-registro">
+
+    <div class="contenedor-flex">
+      <div class="columna-flex">
+        <h2>REGISTRO</h2>
+        <h4 class="txt-social">¿Te gustaria hacerme alguna consulta?</h4>
+        <p class="txt-social">o te quedes con la duda, dejame tu consulta y con gusto te respondere a la brevedad.</p>
+      </div>
+
+      <div class="columna-flex">
+        <form id="registroCliente" action="../data/data.php" method="post">
+          <div><br><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required><br>
+            <input type="email" id="email" name="email" placeholder="Email" required><br>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required><br>
+          </div>
+          <div>
+            <br>
+            <button class="button" type="submit">Registrarse</button>
+          </div>
+          <br>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------5. SOCIAL ------------------------ -->
+
+
+  <section class="section-social">
+    <div class="contenedor-flex">
+      <div class="columna-flex">
+        <figure id="">
+          <img class="imgdiv" src="../img/img-div4.jpg">
+        </figure>
+      </div>
+
+      <div class="columna-flex">
+        <h2>CONTACTO</h2>
+        <p class="txt-social">B/ LAS CUADRAS
+          CALLE 11A CARRERA 33 ESQUINA</p>
+        <p class="txt-social">WhatsApp: 3136988176</p>
+        <p class="txt-social">rinconamigos@gmaill.com</p><br>
+        <strong class="txt-social"> siguenos en:</strong>
+        <a class="icono" href="https://www.facebook.com/?locale=es_LA"><img src="../img/facebook.png"></a>
+        <a class="icono" href="https://twitter.com/"><img src="../img/gorjeo.png"></a>
+        <a class="icono" href="https://www.instagram.com/"> <img src="../img/instagram.png"></a>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------6. MAPS ------------------------- -->
+
+
+  <section class="section-mapa">
+    <iframe class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7602.926429768497!2d-77.28178912020304!3d1.214215250746243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2ed48761b92a73%3A0x44a368566cc3a522!2zUGFzdG8sIE5hcmnDsW8!5e0!3m2!1ses-419!2sco!4v1710992103418!5m2!1ses-419!2sco"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+</body>
+
+</html>
